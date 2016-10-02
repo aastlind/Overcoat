@@ -198,7 +198,7 @@ void __ovc_URLSession_task_didCompleteWithError_(ovc_dummy_AFURLSessionManagerTa
     }
 
     Class responseClass = nil;
-    if (self.responseClassURLMatcher) {
+    if (self.responseClassURLMatcher && !serializationError) {
         responseClass = [self.responseClassURLMatcher modelClassForURLRequest:request andURLResponse:HTTPResponse];
     }
     if (!responseClass) {
