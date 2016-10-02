@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.summary  = 'Overcoat is a small but powerful library that makes creating REST clients simple and fun.'
   s.homepage = 'https://github.com/overcoat/Overcoat'
   s.authors  = { 'Guillermo Gonzalez' => 'gonzalezreal@icloud.com', 'sodastsai' => 'sodas@icloud.com' }
-  s.source   = { :git => 'https://github.com/overcoat/Overcoat.git', :tag => "#{s.version.to_s}" }
+  s.source   = { :git => 'https://github.com/aastlind/Overcoat.git', :branch => "master" }
   s.requires_arc = true
 
   s.ios.deployment_target = '7.0'
